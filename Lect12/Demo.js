@@ -12,3 +12,4 @@ genbtn.addEventListener("click", function() {
     let color = randomColor();
     box.style.backgroundColor = color;
 });
+//insert require data using inner html or inner text
