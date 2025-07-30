@@ -1,17 +1,18 @@
-let todos=[
-    {
-        id:12323,
-        title:"study at 9"
-    },
-    {
-        id:2345,
-        title:"study at 8"
-    }
-]
+//1. create a new element using createElement
+//2. insert require data into the element using innerHTML or innerText
+//3. insert new element in parent conatiner using appendChild or append
+
 let todo = {
     id: 234234,
     title: 'study at 9pm',
 }
+let todos = [{
+    id: 234234,
+    title: 'study at 9pm',
+},{
+    id: 234235,
+    title: 'play at 10pm',
+}]
 
 let todoContainer = document.querySelector('.todocontainer');
 function addTodo(todo){
@@ -26,9 +27,9 @@ function addTodo(todo){
             </div>`
     todoContainer.appendChild(li);
 }
-function showAlltodos(todos){
-    todo.forEach(todo=>{
-        addTodo(todo)
+function showAllTodos(todos){
+    todos.forEach(todo => {
+        addTodo(todo);
     });
 }
-showAlltodos(todos)
+showAllTodos(todos);
